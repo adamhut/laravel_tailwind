@@ -1,9 +1,17 @@
+@tailwind preflight;
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
-@import "variables";
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+.btn-red{
+    @apply .bg-red .text-white .font-bold .py-2 .px-4 .rounded;
+}
+
+.btn-red:hover {
+    @apply .bg-red-dark;
+}
+
+.bg-cover-image {
+    background-image: url('/path/to/image.jpg');
+}
+
+@tailwind utilities;
